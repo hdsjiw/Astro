@@ -24,7 +24,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend/Astro-FE
 
     steps:
       - name: Checkout repository
@@ -60,7 +60,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: backend
+        working-directory: backend/astro
 
     steps:
       - name: Checkout repository
