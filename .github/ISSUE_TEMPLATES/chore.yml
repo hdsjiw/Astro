@@ -1,0 +1,55 @@
+name: "🛠 Chore"
+description: "리팩토링, 설정 변경, 문서 정리 등의 작업"
+title: "[CHORE] "
+labels: ["chore"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 📌 Overview
+      description: 작업 요약
+      placeholder: Short summary of this chore task
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 💡 Description
+      description: 작업의 목적, 필요성, 배경
+      placeholder: Why is this chore needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 📝 Requirements
+      description: 필요한 구체적인 작업들
+      placeholder: |
+        - Update configs
+        - Refactor modules
+        - Clean up folder structure
+    validations:
+      required: false
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✅ TODO
+      description: 체크리스트
+      placeholder: |
+        - [ ] Chore task 1
+        - [ ] Chore task 2
+        - [ ] Chore task 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 📚 Reference
+      description: 관련 문서, 링크, Issue/PR 번호
+      placeholder: ex) #204, https://docs.example.com
+    validations:
+      required: false

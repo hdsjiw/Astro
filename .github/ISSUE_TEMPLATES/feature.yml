@@ -1,0 +1,55 @@
+name: "✨ Feature"
+description: "새로운 기능 개발 또는 개선 작업을 위한 이슈"
+title: "[FEATURE] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 📌 Overview
+      description: 간단한 기능 요약
+      placeholder: Brief summary of the feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 💡 Description
+      description: 기능의 목적, 배경, 목표
+      placeholder: Describe the purpose and background
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 📝 Requirements
+      description: 요구사항 또는 상세 조건 작성
+      placeholder: |
+        - Requirement 1
+        - Requirement 2
+        - Requirement 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✅ TODO
+      description: 작업 항목 체크리스트
+      placeholder: |
+        - [ ] Task 1
+        - [ ] Task 2
+        - [ ] Task 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 📚 Reference
+      description: 관련 자료, 링크, 이슈 번호
+      placeholder: ex) Related docs, screenshots, #123
+    validations:
+      required: false
